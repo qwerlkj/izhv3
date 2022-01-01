@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
         var rotate = Quaternion.LookRotation( playerPosition - position, Vector3.up);
         mRigidBody.MoveRotation(rotate);
         var direction = (playerPosition - position).normalized;
-        mRigidBody.MovePosition(position + direction * speed * Time.deltaTime); 
+        mRigidBody.MovePosition(position + direction * speed * Time.deltaTime);
 
     }
 
